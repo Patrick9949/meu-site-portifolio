@@ -1,0 +1,413 @@
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
+/* Reset de margens e espaçamentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Definição de variáveis globais com cores */
+:root {
+  --black: #000000;
+  --white: #fff;
+  --azul_logo: #004ab0;
+  
+  /* Paleta 1*/
+ --corPaleta1:#695958;
+ --corPaleta2:#B6C8A9;
+ --corPaleta3:#C8EAD3;
+ --corPaleta4:#CFFFE5;
+ --corPaleta5:#CEDADA;
+
+  /* Paleta 2 */
+  --corSegundaPaleta1:#E8EBE4;
+  --corSegundaPaleta2:#D2D5DD; 
+  --corSegundaPaleta3:#B8BACF; 
+  --corSegundaPaleta4:#999AC6; 
+  --corSegundaPaleta5:#798071;
+
+  /* Paleta verção night */
+--corNightPaleta1: #1a1a1f;   /* Base muito escura */
+--corNightPaleta2: #23242c;   /* Fundo intermediário escuro */
+--corNightPaleta3: #3a3d4a;   /* Tom escuro com toque frio, para contraste */
+--corNightPaleta4: #52566d;   /* Azul frio e sóbrio */
+--corNightPaleta5: #667060;   /* Verde acinzentado escuro, corresponde ao #798071 */
+
+}
+
+/* Estilo base do body */
+body {
+  background-color: var(--corSegundaPaleta1); /* fundo claro e agradável */
+  height: 100vh;
+  font-family: 'Lato'; /* Fonte principal */
+}
+
+/* Cabeçalho do site */
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: .8rem;
+  background-color: var(--corSegundaPaleta5); /* cor de fundo do header */
+  min-height: 50px;
+}
+
+/* Container da logo e itens à esquerda no header */
+.box-img-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+/* Estilo da imagem da logo */
+.img-logo {
+  max-width: 60px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Navegação principal */
+nav {
+  display: flex;
+  gap: .8rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Links da navegação */
+.nav-links {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* Botão "Sobre" personalizado */
+#sobre {
+  background-color: transparent;
+  border: 1px solid var(--corSegundaPaleta1);
+  color: var(--black);
+}
+
+#sobre:hover {
+  color: var(--corSegundaPaleta4);
+  transition: .4s;
+  text-decoration: none;
+}
+
+/* Hover para links do nav */
+.nav-links:hover {
+  color: var(--corSegundaPaleta4);
+  transition: .4s;
+  text-decoration: underline;
+}
+
+/* Botões de ação no topo */
+.box-btn-action {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Botões e links de ação compartilhando estilos */
+:is(button, .link-action) {
+  padding: .6rem;
+  font-size: .9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+/* Botão padrão */
+.btn-action {
+  background-color: transparent;
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+/* Botão de projetos */
+#botao_projetos {
+  background-color: transparent;
+  border: 1px solid var(--corSegundaPaleta1);
+  color: var(--black);
+}
+
+#botao_projetos:hover {
+  color: var(--corSegundaPaleta4);
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: .4s;
+  cursor: default;
+}
+
+.btn-action:hover {
+  background-color: var(--corSegundaPaleta4);
+  border: 1px solid var(--corSegundaPaleta4);
+}
+
+/* Link de ação com largura fixa */
+.link-action {
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+}
+
+/* Estilo principal */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Espaçamento padrão para seções */
+section {
+  padding: 4rem;
+}
+
+/* Primeira seção do site (home) */
+.first-section {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 650px;
+}
+
+/* Container da primeira seção */
+.first-section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+}
+
+/* Título principal */
+h1, h7 {
+  font-size: 4rem;
+  color: var(--black);
+  letter-spacing: 8px;
+}
+
+/* Destaque de palavras */
+strong {
+  color: var(--corSegundaPaleta4);
+}
+
+strong:hover {
+  color: var(--black);
+}
+/*-------------------------------------------------------------------*/
+/* Foto de perfil */
+.img-profile {
+  max-width: 250px;
+  padding: 1rem;
+  border-radius: 80%;
+  width: 100%;
+}
+
+.img-profile {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.img-profile {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    pointer-events: none;
+}
+
+
+
+/*-------------------------------------------------------------------*/
+
+
+/* Seções com imagem de fundo (ex: skills, contatos) */
+:is(.second-section, .fourth-section) {
+  background: var(--corSegundaPaleta5);/*url("imagens/pexels-neo1600.jpg") no-repeat right top fixed;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Título colorido para essas seções */
+.title {
+  color: var(--corSegundaPaleta1);
+}
+
+/* Lista de tecnologias ou habilidades */
+.second-section ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Itens da lista de habilidades */
+.second-section ul li {
+  color: var(--black);
+}
+
+.second-section ul li:hover {
+  color: var(--corSegundaPaleta4);
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: .4s;
+  cursor: default;
+}
+
+/* Terceira seção (quem sou eu, descrição etc) */
+.third-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.third-section > div {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Imagens da terceira seção */
+.third-section > div img {
+  width: 120px;
+  border-radius: 10px;
+}
+
+/* Parágrafos da seção */
+.third-section > div p {
+  max-width: 600px;
+  color: var(--black);
+  text-align: justify;
+}
+
+/* Título da seção "quem sou eu" */
+#quemsoueu {
+  color: var(--black);
+}
+
+/* Rodapé */
+footer {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Container do conteúdo no rodapé */
+footer > div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Lista de projetos */
+#my-projects-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-projects-list a {
+  text-decoration: none;
+  color: var(--corSegundaPaleta4);
+}
+
+#my-projects-list a:hover {
+  color: var(--corSegundaPaleta4);
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: .4s;
+  cursor: pointer;
+}
+
+/* Sombreamento em alguns elementos */
+:is(.img-profile, .quem-sou-eu) {
+  box-shadow: 2px 2px 2px 2px var(--black);
+}
+
+/* Ícones SVG */
+svg {
+  color: var(--black);
+}
+
+svg:hover {
+  color: var(--corSegundaPaleta4);
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: .4s;
+  cursor: default;
+}
+
+/* ------------------------------------ */
+/* Animação do <h1> */
+h1 {
+  font-weight: bold;
+  font-size: 3em;
+  color: #333;
+  text-align: center;
+}
+
+h1:hover {
+  color: var(--corSegundaPaleta4);
+}
+
+/* ------------------------------------ */
+/* Animação de texto com cursor piscando */
+
+
+/* ------------------------------------ */
+/* Responsividade para telas pequenas */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+    color: var(--black);
+    letter-spacing: 8px;
+  }
+
+  .box-btn-action {
+    display: none;
+  }
+
+  .img-logo {
+    display: none;
+  }
+
+  .second-section, .fourth-section {
+    background-image: none;
+  }
+
+  .nomeEvento2 {
+    display: none;
+  }
+}
+
+/* Oculta a animação de digitação em telas grandes */
+@media only screen and (min-width: 600px) {
+  
+}
+
+#contador {
+  color: var(--corSegundaPaleta1); /* caso tenha texto */
+}

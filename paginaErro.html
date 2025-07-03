@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Erro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .error-icon {
+      font-size: 120px;
+      color: #ff3b3b;
+      margin-bottom: 20px;
+      animation: pulse 1s infinite;
+    }
+
+    .error-text {
+      font-size: 48px;
+      color: #ff3b3b;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .error-description {
+      font-size: 18px;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
+    .back-button {
+      background-color: #ff3b3b;
+      color: #ffffff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: #e03232;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="error-icon">✖</div>
+  <div class="error-text">ERRO</div>
+  <div class="error-description">Algo deu errado. Por favor, tente novamente mais tarde ou volte à página inicial.</div>
+  <a href="index.html" class="back-button">Voltar para a Página Inicial</a>
+</body>
+</html>

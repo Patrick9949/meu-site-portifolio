@@ -1,0 +1,46 @@
+ Paletas de cores de temas
+ 
+ /* Paleta 1*/
+ --corPaleta1:#695958;
+ --corPaleta2:#B6C8A9;
+ --corPaleta3:#C8EAD3;
+ --corPaleta4:#CFFFE5;
+ --corPaleta5:#CEDADA;
+
+  /* Paleta 2 */
+  --corSegundaPaleta1:#E8EBE4;
+  --corSegundaPaleta2:#D2D5DD; 
+  --corSegundaPaleta3:#B8BACF; 
+  --corSegundaPaleta4:#999AC6; 
+  --corSegundaPaleta5:#798071;
+
+/* Paleta verção night */
+--corNightPaleta1: #1a1a1f;   /* Base muito escura */
+--corNightPaleta2: #23242c;   /* Fundo intermediário escuro */
+--corNightPaleta3: #3a3d4a;   /* Tom escuro com toque frio, para contraste */
+--corNightPaleta4: #52566d;   /* Azul frio e sóbrio */
+--corNightPaleta5: #667060;   /* Verde acinzentado escuro, corresponde ao #798071 */
+
+
+-----------------------------------------------------------------------------------------------------
+
+Equivalências com sua paleta clara:
+Paleta Clara	Paleta Night	Observações
+#E8EBE4	#1a1a1f	Branco esverdeado → fundo escuro
+#D2D5DD	#23242c	Cinza claro → cinza escuro azulado
+#B8BACF	#3a3d4a	Azul acinzentado → contraste noturno
+#999AC6	#52566d	Lavanda fria → azul escuro levemente púrpura
+#798071	#667060	Verde acinzentado → mesma ideia mais escura
+
+Sugestões de uso:
+--corNightPaleta1 para fundo principal
+
+--corNightPaleta2 para caixas/seções
+
+--corNightPaleta3 para borda/sombra
+
+--corNightPaleta4 para títulos/destaques
+
+--corNightPaleta5 para detalhes/links ativos
+
+-------------------------------------------------------------------------------------------------------

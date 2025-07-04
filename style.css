@@ -342,10 +342,29 @@ footer > div {
   cursor: pointer;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------*/
 /* Sombreamento em alguns elementos */
-:is(.img-profile, .quem-sou-eu) {
+
+/* Sombreamento padrão para telas maiores */
+*:is(.img-profile, .quem-sou-eu) {
   box-shadow: 2px 2px 2px 2px var(--black);
 }
+
+/* Sombreamento para telas de celular */
+@media (max-width: 768px) {
+  *:is(.img-profile, .quem-sou-eu) {
+    box-shadow: 2px 2px 2px 2px var(--corSegundaPaleta1);
+  }
+}
+
+/* Alternativa: usando breakpoint mais específico para celulares */
+@media (max-width: 480px) {
+  *:is(.img-profile, .quem-sou-eu) {
+    box-shadow: 2px 2px 2px 2px var(--corSegundaPaleta1);
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
 
 /* Ícones SVG */
 svg {
